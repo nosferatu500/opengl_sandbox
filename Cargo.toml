@@ -1,0 +1,15 @@
+[package]
+name = "opengl_sandbox"
+version = "0.1.0"
+authors = ["Vitaly Shvetsov <vitalya199529@gmail.com>"]
+
+[dependencies]
+sdl2 = { version = "0.31.0", features = ["bundled", "static-link"] }
+gl = { path = "lib/gl" }
+failure = "0.1.2"
+
+[features]
+gl_debug = ["gl/debug"]
+
+[build-dependencies]
+walkdir = "2.1.4"
